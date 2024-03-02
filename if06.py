@@ -13,4 +13,19 @@ def main(a,b,c):
     Returns:
         string: string with the result
     """
-    return
+    k=0
+    x=0
+    if a>0:
+        k+=1
+    if b>0:
+        k+=1
+    if c>0:
+        k+=1
+    if a<0:
+        x+=1
+    if b<0:
+        x+=1
+    if c<0:
+        x+=1
+    return k,x
+print(main(1,-3,4))    

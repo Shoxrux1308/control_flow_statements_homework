@@ -6,11 +6,22 @@ def main(temp):
     Temp 11-20: "Cold"
     Temp 21-30: "Normal"
     Temp 31-40: "Hot"
-    Temp >40: "Very Hot"
+    Temp >40:  "Ho
 
     Args:
         temp: integer
     Returns:
         string: the message to print
     """
-    return
+    if temp<0:
+        return "Freezing"
+    if 1<=temp<=10:
+        return "Very Cold"
+    if 11<=temp<=20:
+        return "Cold"
+    if 21<=temp<=30:
+        return "Normal"
+    if 31<=temp<=40:
+        return  "Hot"
+    return  "Very Hot"
+print(main(22))
